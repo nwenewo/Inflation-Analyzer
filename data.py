@@ -1,41 +1,38 @@
 # data.py
 
-# Sample cost data by lifestyle
 SIMULATED_COSTS = {
-    "Basic": {
+    "basic": {
+        "rent": 40000,
         "food": 30000,
-        "transport": 15000,
-        "housing": 20000,
-        "utilities": 10000,
-        "misc": 5000,
+        "transport": 10000,
+        "utilities": 8000,
+        "misc": 5000
     },
-    "Moderate": {
+    "moderate": {
+        "rent": 70000,
         "food": 50000,
-        "transport": 25000,
-        "housing": 40000,
-        "utilities": 15000,
-        "misc": 10000,
+        "transport": 15000,
+        "utilities": 10000,
+        "misc": 10000
     },
-    "Luxury": {
+    "luxury": {
+        "rent": 120000,
         "food": 80000,
-        "transport": 40000,
-        "housing": 80000,
-        "utilities": 25000,
-        "misc": 30000,
-    },
+        "transport": 25000,
+        "utilities": 20000,
+        "misc": 20000
+    }
 }
 
-# Simulated inflation levels
 INFLATION_SCENARIOS = {
-    "Low (5%)": 0.05,
-    "Medium (15%)": 0.15,
-    "High (30%)": 0.30,
-    "Extreme (50%)": 0.50,
+    "Low (5%)": 1.05,
+    "Medium (15%)": 1.15,
+    "High (30%)": 1.30
 }
 
 def calculate_adjusted_expenses(income, lifestyle, inflation_rate):
-    base = SIMULATED_COSTS[lifestyle]
-    adjusted = {k: int(v * (1 + inflation_rate)) for k, v in base.items()}
-    total = sum(adjusted.values())
+    base_costs = SIMULATED_COSTS[lifestyle]
+    adjusted_costs = {k: int(v * inflation_rate) for k, v in base_costs.items()}
+    total = sum(adjusted_costs.values())
     balance = income - total
-    return adjusted, total, balance
+    return adjusted_costs, total, balance
