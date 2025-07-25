@@ -9,9 +9,4 @@ Features
 - Shows cost breakdown per category
 - Gives intelligent budgeting tips — no internet needed
 
-
-How to Run Locally
-
-1. Clone the Project
-
-git clone https://github.com/yourusername/inflation-analyzer
+The app url https://my-july-knowledge-showcase.streamlit.app/
