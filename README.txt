@@ -9,4 +9,4 @@ Features
 - Shows cost breakdown per category
 - Gives intelligent budgeting tips — no internet needed
 
-The app url https://my-july-knowledge-showcase.streamlit.app/
+The app url https://my-july-knowledge-showcase.streamlit.app/#inflation-impact-analyzer-for-nigeria
