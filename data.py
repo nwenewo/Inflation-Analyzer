@@ -2,22 +2,22 @@
 
 SIMULATED_COSTS = {
     "basic": {
-        "rent": 40000,
-        "food": 30000,
+        "rent": 150000,
+        "food": 40000,
         "transport": 10000,
         "utilities": 8000,
         "misc": 5000
     },
     "moderate": {
-        "rent": 70000,
-        "food": 50000,
+        "rent": 250000,
+        "food": 60000,
         "transport": 15000,
         "utilities": 10000,
         "misc": 10000
     },
     "luxury": {
-        "rent": 120000,
-        "food": 80000,
+        "rent": 2000000,
+        "food": 100000,
         "transport": 25000,
         "utilities": 20000,
         "misc": 20000
